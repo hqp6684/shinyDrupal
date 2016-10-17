@@ -1,0 +1,20 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.eol": "\n",
+    "editor.formatOnSave": true,
+    //tells vsc to use tsc in node_modules 
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "workbench.editor.showIcons": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "tslint.enable": true
+}
