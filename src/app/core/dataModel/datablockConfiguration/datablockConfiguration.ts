@@ -1,6 +1,5 @@
 // import * as column from '../column/column';
 import { Datablock } from '../datablock/datablock';
-import { ConfigState } from '../dataModel';
 
 interface State {
     Untouched: boolean;
@@ -29,5 +28,6 @@ export class DbConfiguration {
         this.state.Pristine = true;
         this.state.Dirty = false;
         this.state.Submitted = false;
+        // todo restore to the last pristine
     }
 }

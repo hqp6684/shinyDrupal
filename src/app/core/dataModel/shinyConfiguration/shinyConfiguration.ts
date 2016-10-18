@@ -1,11 +1,11 @@
 
-import { DbConfiguration } from '../datablockConfiguration/datablockConfiguration';
+// import { DbConfiguration } from '../datablockConfiguration/datablockConfiguration';
 
 export class ShinyConfiguration {
     // private dbConfigs = Array<DbConfiguration>();
 
     // config of the db being edited
-    private activeDbConfig: DbConfiguration;
+    // private activeDbConfig: DbConfiguration;
 
     constructor(private id?: number) {
         if (id) {
@@ -15,13 +15,15 @@ export class ShinyConfiguration {
         }
     }
 
-    get dbConfig() {
-        return this.activeDbConfig;
-    }
 
     reconstructConfig(id: number) {
         // TODO - get config data from monet
         // and then reconstruct the config
+        /**
+         * let say: get config from db
+         * would return Array<DbConfig>, Array<DataAnalyzeToolConfig>
+         * 
+         */
         return;
     }
 }

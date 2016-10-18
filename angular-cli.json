@@ -15,15 +15,10 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "../node_modules/bootstrap/dist/css/bootstrap.css",
         "app/shared/module/material-2/material-2.theme.scss",
         "styles.scss"
       ],
-      "scripts": [
-        "../node_modules/jquery/dist/jquery.js",
-        "../node_modules/tether/dist/js/thether.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.js"
-      ],
+      "scripts": [],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",

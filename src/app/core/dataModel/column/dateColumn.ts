@@ -1,4 +1,4 @@
-import { Column } from './abstract/column';
+import { Column } from './column.abstract';
 
 export class DateColumn extends Column {
     constructor(readonly col_id: number,

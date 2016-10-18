@@ -10,7 +10,7 @@ const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'home', component: HomeComponent },
     { path: 'dbSelection', loadChildren: './featureModule/db-selection/db-selection.module#DbSelectionModule' },
-    // { path: 'dbColSelection', loadChildren: './featureModule/dbColSelection/dbColSelection.module#DbColSelectionModule' }
+    { path: 'legacyShiny', loadChildren: './featureModule/legacy-shiny/legacy-shiny.module#LegacyShinyModule' },
     { path: '**', component: PageNotFoundComponent }
 
 ];

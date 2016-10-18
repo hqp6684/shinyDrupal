@@ -14,7 +14,13 @@ import * as coreService from '../../service/service';
     HttpModule
   ],
   declarations: [CoreComponent],
-  providers: [{ provide: APP_BASE_HREF, useValue: '/' }, coreService.ShinyConfigurationService]
+  providers: [
+    { provide: APP_BASE_HREF, useValue: '/' },
+    coreService.ShinyConfigurationService,
+    coreService.DatablockService,
+    coreService.HandleHttpErrorService
+
+  ]
 })
 export class CoreModule {
   static forRoot(config: coreService.ShinyConfigurationServiceConfig): ModuleWithProviders {

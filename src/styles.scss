@@ -8,7 +8,22 @@
 //   $dark-accent:  md-palette($md-blue-grey, A200, A100, A400);
 //   $dark-warn:    md-palette($md-deep-orange);
 
+
+
 // App main layout
-md-sidenav-layout.dark-theme{
-    background-color: #303030;
+md-sidenav-layout{
+    // over ride bootstrap css
+    // this button and a properties are defined in _reboot.scss bootstrap source
+    button:focus{
+        outline: none;
+    };
+    a:focus{
+        outline: none;
+    }
+    
+    
+    
+    &.dark-theme{
+        background-color: #303030;
+    }
 }

@@ -8,11 +8,17 @@ import { Material2Module } from './shared/module/material-2/material-2.module';
 import { AppRoutingModule } from './app-routing.module';
 /** Feature Module */
 import { DbSelectionModule } from './featureModule/db-selection/db-selection.module';
+import { LegacyShinyModule } from './featureModule/legacy-shiny/legacy-shiny.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './core/component/home/home.component';
 import { LeftSidenavComponent } from './core/component/left-sidenav/left-sidenav.component';
 import { PageNotFoundComponent } from './core/component/page-not-found/page-not-found.component';
+
+/**App config 
+ * define api root url
+*/
+import { apiRootUrl } from './app.config';
 
 @NgModule({
   declarations: [
@@ -22,12 +28,14 @@ import { PageNotFoundComponent } from './core/component/page-not-found/page-not-
     PageNotFoundComponent,
   ],
   imports: [
-    DbSelectionModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    CoreModule.forRoot({ apiRootUrl: 'apiUrl', shinyConfigurationId: 0 }),
-    Material2Module
+    CoreModule.forRoot({ apiRootUrl: apiRootUrl, shinyConfigurationId: 0 }),
+    Material2Module,
+
+    DbSelectionModule,
+    LegacyShinyModule
   ],
   providers: [],
   bootstrap: [AppComponent]

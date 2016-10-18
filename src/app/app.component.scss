@@ -5,3 +5,23 @@
 
 
 
+.app-bottom-fab {
+  display: inline-block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  
+  // _reboot.scss boots4
+  button:focus{
+    outline: none
+  };
+  a:focus{
+    outline: none;
+    color: inherit;
+  };
+  a:hover{
+    color:inherit;
+  }
+  
+  
+}
