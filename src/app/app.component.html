@@ -1,20 +1,18 @@
-<div class="container">
-	<md-sidenav-layout [class.dark-theme]="isDarkTheme">
-		<md-sidenav #leftSideNav mode="side">
-			<app-left-side-nav></app-left-side-nav>
-		</md-sidenav>
-		<md-toolbar color="primary">
-			<button md-icon-button disableRipple (click)="leftSideNav.toggle()">
+<md-sidenav-layout [class.dark-theme]="isDarkTheme" fullscreen>
+	<md-sidenav #leftSideNav mode="side">
+		<app-left-sidenav></app-left-sidenav>
+	</md-sidenav>
+	<md-toolbar color="primary">
+		<button md-icon-button (click)="leftSideNav.toggle()">
 					<md-icon class="md-24">menu</md-icon>
 			</button>
-			<h1>
-				{{title}}
-			</h1>
-			<span class="app-root-toolbar-filler"></span>
-			<button md-button (click)="isDarkTheme = !isDarkTheme">TOGGLE DARK THEME</button>
-		</md-toolbar>
-		<div class="app-content">
-			<router-outlet></router-outlet>
-		</div>
-	</md-sidenav-layout>
-</div>
+		<h2>
+			{{title}}
+		</h2>
+		<span class="app-root-toolbar-filler"></span>
+		<button md-button (click)="isDarkTheme = !isDarkTheme">TOGGLE DARK THEME</button>
+	</md-toolbar>
+	<div class=" app-content">
+		<router-outlet></router-outlet>
+	</div>
+</md-sidenav-layout>

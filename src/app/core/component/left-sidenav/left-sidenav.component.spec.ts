@@ -1,11 +1,11 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async } from '@angular/core/testing';
-import { LeftSideNavComponent } from './left-side-nav.component';
+import { LeftSidenavComponent } from './left-sidenav.component';
 
-describe('Component: LeftSideNav', () => {
+describe('Component: LeftSidenav', () => {
   it('should create an instance', () => {
-    let component = new LeftSideNavComponent();
+    let component = new LeftSidenavComponent();
     expect(component).toBeTruthy();
   });
 });
