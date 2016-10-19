@@ -5,6 +5,7 @@ import { Material2Module } from '../../shared/module/material-2/material-2.modul
 import { LegacyShinyRoutingModule } from './legacy-shiny-routing.module';
 import { LegacyShinyComponent } from './legacy-shiny.component';
 import { HomeComponent } from './component/home/home.component';
+import { ViewComponent } from './component/view/view.component';
 
 @NgModule({
   imports: [
@@ -13,6 +14,6 @@ import { HomeComponent } from './component/home/home.component';
     Material2Module
 
   ],
-  declarations: [LegacyShinyComponent, HomeComponent]
+  declarations: [LegacyShinyComponent, HomeComponent, ViewComponent]
 })
 export class LegacyShinyModule { }

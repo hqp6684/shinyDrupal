@@ -1,11 +1,11 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async } from '@angular/core/testing';
-import { DatablockComponent } from './datablock.component';
+import { ViewComponent } from './view.component';
 
-describe('Component: Datablock', () => {
+describe('Component: View', () => {
   it('should create an instance', () => {
-    let component = new DatablockComponent();
+    let component = new ViewComponent();
     expect(component).toBeTruthy();
   });
 });
