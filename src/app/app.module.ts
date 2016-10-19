@@ -7,7 +7,7 @@ import { Material2Module } from './shared/module/material-2/material-2.module';
 /**Root Routing Module */
 import { AppRoutingModule } from './app-routing.module';
 /** Feature Module */
-// import { DbSelectionModule } from './featureModule/db-selection/db-selection.module';
+import { DbSelectionModule } from './featureModule/db-selection/db-selection.module';
 // import { LegacyShinyModule } from './featureModule/legacy-shiny/legacy-shiny.module';
 
 import { AppComponent } from './app.component';
@@ -30,11 +30,12 @@ import { apiRootUrl } from './app.config';
   imports: [
     BrowserModule,
     FormsModule,
+    DbSelectionModule,
     AppRoutingModule,
     CoreModule.forRoot({ apiRootUrl: apiRootUrl, shinyConfigurationId: 0 }),
     Material2Module,
 
-    // DbSelectionModule,
+
     // LegacyShinyModule
   ],
   providers: [],

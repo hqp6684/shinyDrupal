@@ -9,7 +9,7 @@ import { PageNotFoundComponent } from './core/component/page-not-found/page-not-
 const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'home', component: HomeComponent },
-    { path: 'dbSelection', loadChildren: './featureModule/db-selection/db-selection.module#DbSelectionModule' },
+    // { path: 'dbSelection', loadChildren: './featureModule/db-selection/db-selection.module#DbSelectionModule' },
     { path: 'legacyShiny', loadChildren: './featureModule/legacy-shiny/legacy-shiny.module#LegacyShinyModule' },
     { path: '**', component: PageNotFoundComponent }
 

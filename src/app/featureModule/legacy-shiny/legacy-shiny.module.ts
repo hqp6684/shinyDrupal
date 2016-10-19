@@ -10,9 +10,9 @@ import { ViewComponent } from './component/view/view.component';
 @NgModule({
   imports: [
     CommonModule,
-    LegacyShinyRoutingModule,
-    Material2Module
 
+    LegacyShinyRoutingModule,
+    Material2Module,
   ],
   declarations: [LegacyShinyComponent, HomeComponent, ViewComponent]
 })

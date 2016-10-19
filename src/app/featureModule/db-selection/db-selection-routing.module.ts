@@ -7,12 +7,11 @@ import { HomeComponent } from './component/home/home.component';
 const routes: Routes = [
     // { path: 'dbSelection', , pathMatch: 'full' },
     {
-        path: '', component: DbSelectionComponent,
+        path: 'dbSelection', component: DbSelectionComponent,
         children: [
+            // { path: '', componenti: HomeComponent },
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
-            { path: '**', redirectTo: '../legacyShiny' }
-
         ],
     }
 
