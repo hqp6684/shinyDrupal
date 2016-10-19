@@ -8,7 +8,9 @@
 //   $dark-accent:  md-palette($md-blue-grey, A200, A100, A400);
 //   $dark-warn:    md-palette($md-deep-orange);
 
-
+// body{
+//    font-family: 'Roboto', sans-serif;
+// }
 
 // App main layout
 md-sidenav-layout{
@@ -28,4 +30,9 @@ a:focus{
     outline: none;
 }
     
-    
+.default-toolbar-filler{
+    flex: 1 1 auto;
+}    
+label{
+    margin-bottom: 0;
+}

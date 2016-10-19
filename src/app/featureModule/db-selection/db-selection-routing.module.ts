@@ -2,16 +2,15 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { DbSelectionComponent } from './db-selection.component';
-import { HomeComponent } from './component/home/home.component';
+import { DbSelectionHomeComponent } from './component/db-selection-home/db-selection-home.component';
 
 const routes: Routes = [
     // { path: 'dbSelection', , pathMatch: 'full' },
     {
         path: 'dbSelection', component: DbSelectionComponent,
         children: [
-            // { path: '', componenti: HomeComponent },
             { path: '', redirectTo: 'home', pathMatch: 'full' },
-            { path: 'home', component: HomeComponent },
+            { path: 'home', component: DbSelectionHomeComponent },
         ],
     }
 
