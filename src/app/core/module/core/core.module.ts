@@ -2,7 +2,7 @@ import {
   ModuleWithProviders, NgModule,
   Optional, SkipSelf
 } from '@angular/core';
-import { CommonModule, APP_BASE_HREF } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
 
 import { CoreComponent } from './core.component';
@@ -15,10 +15,10 @@ import * as coreService from '../../service/service';
   ],
   declarations: [CoreComponent],
   providers: [
-    { provide: APP_BASE_HREF, useValue: '/' },
     coreService.ShinyConfigurationService,
     coreService.DatablockService,
-    coreService.HandleHttpErrorService
+    coreService.HandleHttpErrorService,
+    coreService.AppConfigService
 
   ]
 })

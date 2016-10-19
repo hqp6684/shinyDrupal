@@ -1,11 +1,11 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async } from '@angular/core/testing';
-import { ViewComponent } from './view.component';
+import { LegacyShinyHomeComponent } from './legacy-shiny-home.component';
 
-describe('Component: View', () => {
+describe('Component: LegacyShinyHome', () => {
   it('should create an instance', () => {
-    let component = new ViewComponent();
+    let component = new LegacyShinyHomeComponent();
     expect(component).toBeTruthy();
   });
 });
