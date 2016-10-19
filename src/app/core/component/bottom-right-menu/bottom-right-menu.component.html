@@ -1,0 +1,12 @@
+<button md-mini-fab [md-menu-trigger-for]="bottomRightMenu">
+   <md-icon>more_vert</md-icon>
+</button>
+
+<md-menu #bottomRightMenu="mdMenu" x-position="before" y-position="above">
+	<a md-menu-item routerLink="/home" routerLinkActive="active">
+		<md-icon class="md-24">home</md-icon>
+	</a>
+	<button md-menu-item> Settings </button>
+	<button md-menu-item> Help </button>
+	<button md-menu-item disabled> Sign Out </button>
+</md-menu>

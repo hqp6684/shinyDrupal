@@ -12,18 +12,20 @@
 
 // App main layout
 md-sidenav-layout{
-    // over ride bootstrap css
-    // this button and a properties are defined in _reboot.scss bootstrap source
-    button:focus{
-        outline: none;
-    };
-    a:focus{
-        outline: none;
-    }
-    
-    
+
     
     &.dark-theme{
         background-color: #303030;
     }
 }
+
+// over ride bootstrap css
+// this button and a properties are defined in _reboot.scss bootstrap source
+button:focus{
+    outline: none;
+};
+a:focus{
+    outline: none;
+}
+    
+    
