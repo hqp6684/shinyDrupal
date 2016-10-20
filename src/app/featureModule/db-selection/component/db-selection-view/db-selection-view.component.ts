@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./db-selection-view.component.scss']
 })
 export class DbSelectionViewComponent implements OnInit {
-  dbListViewMode: string;
+  dbListViewModes = ['view_list', 'view_comfy'];
+  dbListViewMode: 'view_list';
   constructor() { }
 
   ngOnInit() {

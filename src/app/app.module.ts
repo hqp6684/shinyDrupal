@@ -37,7 +37,7 @@ import { FixedTopToolbarComponent } from './core/component/fixed-top-toolbar/fix
     FormsModule,
     Material2Module,
     DbSelectionModule,
-    CoreModule.forRoot({ apiRootUrl: apiRootUrl, shinyConfigurationId: 0 }),
+    CoreModule.forRoot({ apiRootUrl: apiRootUrl }),
     AppRoutingModule,
 
     // LegacyShinyModule

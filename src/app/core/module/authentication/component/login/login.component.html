@@ -1,6 +1,14 @@
-<h2>LOGIN</h2>
-<p>{{message}}</p>
-<p>
-	<button (click)="login()" *ngIf="!authService.isLoggedIn">Login</button>
-	<button (click)="logout()" *ngIf="authService.isLoggedIn">Logout</button>
-</p>
+<md-card>
+	<md-card-title>
+		<h3>LOGIN</h3>
+	</md-card-title>
+	<md-card-content>{{message}}</md-card-content>
+	<md-card-actions>
+		<button md-raised-button color="primary" (click)="login()" *ngIf="!authService.isLoggedIn">
+			Login
+		</button>
+		<button md-raised-button color="primary" (click)="logout()" *ngIf="authService.isLoggedIn">
+			Logout
+		</button>
+	</md-card-actions>
+</md-card>

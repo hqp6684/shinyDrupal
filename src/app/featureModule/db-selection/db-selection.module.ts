@@ -11,6 +11,7 @@ import { DbSelectionLeftSidenavComponent } from './component/db-selection-left-s
 import { DbSelectionViewListComponent } from './component/db-selection-view-list/db-selection-view-list.component';
 import { DbSelectionViewComponent } from './component/db-selection-view/db-selection-view.component';
 import { DbSelectionViewLeftSidenavComponent } from './component/db-selection-view-left-sidenav/db-selection-view-left-sidenav.component';
+import { DbSelectionViewComfyComponent } from './component/db-selection-view-comfy/db-selection-view-comfy.component';
 
 @NgModule({
   imports: [
@@ -24,6 +25,6 @@ import { DbSelectionViewLeftSidenavComponent } from './component/db-selection-vi
     DbSelectionHomeComponent,
     DbSelectionLeftSidenavComponent,
     DbSelectionViewListComponent,
-    DbSelectionViewComponent, DbSelectionViewLeftSidenavComponent]
+    DbSelectionViewComponent, DbSelectionViewLeftSidenavComponent, DbSelectionViewComfyComponent]
 })
 export class DbSelectionModule { }

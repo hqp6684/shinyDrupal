@@ -3,7 +3,7 @@ import { Http, Response } from '@angular/http';
 
 import { HandleHttpErrorService } from './handle-http-error.service';
 import { Datablock } from '../dataModel/data.model';
-
+import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class DatablockService {
   private apiUrl: string;
@@ -17,7 +17,7 @@ export class DatablockService {
     this.apiUrl = url;
   }
 
-  getAllDatablock() {
+  getAllDatablock(): Observable<Array<Datablock>> {
     return this.http.get(this.url)
       .map(this.extractGetAll)
       .catch(this.handleHttpService.handleError);

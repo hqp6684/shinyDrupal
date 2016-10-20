@@ -22,13 +22,13 @@ export class ShinyConfigurationService {
   ) {
     this.apiRootUrl = config.apiRootUrl;
     this.dbService.url = this.apiRootUrl.concat('db/');
-    this.shinyConfig = new ShinyConfiguration(config.shinyConfigurationId);
+    this.shinyConfig = new ShinyConfiguration(0);
 
 
   }
 
   getAllDatablocks() {
-    this.dbService.getAllDatablock();
+    return this.dbService.getAllDatablock();
   }
 
 }

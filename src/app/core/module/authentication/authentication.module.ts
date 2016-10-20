@@ -7,11 +7,14 @@ import { LoginComponent } from './component/login/login.component';
 import { AuthGuardService } from './service/auth-guard.service';
 import { AuthService } from './service/auth.service';
 
+import { Material2Module } from '../../../shared/module/material-2/material-2.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    AuthenticationRoutingModule
+    Material2Module,
+    AuthenticationRoutingModule,
+
   ],
   declarations: [AuthenticationComponent, LoginComponent],
   providers: [AuthService, AuthGuardService]

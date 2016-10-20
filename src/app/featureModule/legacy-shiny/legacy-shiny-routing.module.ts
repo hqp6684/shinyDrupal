@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import {AuthGuardService} from '../../core/module/authentication/service/auth-guard.service';
 import { LegacyShinyComponent } from './legacy-shiny.component';
 import { LegacyShinyHomeComponent } from './component/legacy-shiny-home/legacy-shiny-home.component';
 
@@ -8,6 +9,7 @@ import { LegacyShinyHomeComponent } from './component/legacy-shiny-home/legacy-s
 const routes: Routes = [
     {
         path: '', component: LegacyShinyComponent,
+        canActivate: [AuthGuardService],
         children: [
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: LegacyShinyHomeComponent },
