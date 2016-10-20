@@ -5,13 +5,19 @@ import {
 import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
 
+import { AuthenticationModule } from '../authentication/authentication.module';
+import { AdminModule } from '../admin/admin.module';
+
+
 import { CoreComponent } from './core.component';
 import * as coreService from '../../service/service';
 
 @NgModule({
   imports: [
     CommonModule,
-    HttpModule
+    HttpModule,
+    AuthenticationModule,
+    AdminModule
   ],
   declarations: [CoreComponent],
   providers: [

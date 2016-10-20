@@ -1,6 +1,6 @@
 <app-fixed-top-toolbar [leftSideNav]="leftSideNav" [isDarkTheme]="isDarkTheme" (onToggleDarkTheme)="onToggleDarkTheme($event)"></app-fixed-top-toolbar>
 <md-sidenav-layout [class.dark-theme]="isDarkTheme" class="app-md-sidenav-layout" fullscreen>
-	<md-sidenav #leftSideNav mode="side">
+	<md-sidenav #leftSideNav mode="side" opened>
 		<app-left-sidenav></app-left-sidenav>
 	</md-sidenav>
 	<div class=" app-content">

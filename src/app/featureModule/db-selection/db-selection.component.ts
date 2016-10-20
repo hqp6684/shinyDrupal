@@ -9,7 +9,7 @@ import {
 
 })
 export class DbSelectionComponent implements OnInit {
-  dbListViewMode: string;
+
 
   constructor() { }
 
@@ -17,8 +17,6 @@ export class DbSelectionComponent implements OnInit {
 
   }
 
-  toggleViewMode() {
-    console.log(this.dbListViewMode);
-  }
+
 
 }

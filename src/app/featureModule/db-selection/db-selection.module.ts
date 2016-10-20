@@ -9,6 +9,8 @@ import { DbSelectionRoutingModule } from './db-selection-routing.module';
 import { DbSelectionHomeComponent } from './component/db-selection-home/db-selection-home.component';
 import { DbSelectionLeftSidenavComponent } from './component/db-selection-left-sidenav/db-selection-left-sidenav.component';
 import { DbSelectionViewListComponent } from './component/db-selection-view-list/db-selection-view-list.component';
+import { DbSelectionViewComponent } from './component/db-selection-view/db-selection-view.component';
+import { DbSelectionViewLeftSidenavComponent } from './component/db-selection-view-left-sidenav/db-selection-view-left-sidenav.component';
 
 @NgModule({
   imports: [
@@ -18,6 +20,10 @@ import { DbSelectionViewListComponent } from './component/db-selection-view-list
     Material2Module,
 
   ],
-  declarations: [DbSelectionComponent, DbSelectionHomeComponent, DbSelectionLeftSidenavComponent, DbSelectionViewListComponent]
+  declarations: [DbSelectionComponent,
+    DbSelectionHomeComponent,
+    DbSelectionLeftSidenavComponent,
+    DbSelectionViewListComponent,
+    DbSelectionViewComponent, DbSelectionViewLeftSidenavComponent]
 })
 export class DbSelectionModule { }

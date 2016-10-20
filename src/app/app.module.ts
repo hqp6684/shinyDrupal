@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 /** Feature Module */
 import { DbSelectionModule } from './featureModule/db-selection/db-selection.module';
 // import { LegacyShinyModule } from './featureModule/legacy-shiny/legacy-shiny.module';
+// import { AdminModule } from './core/module/admin/admin.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './core/component/home/home.component';
@@ -34,11 +35,10 @@ import { FixedTopToolbarComponent } from './core/component/fixed-top-toolbar/fix
   imports: [
     BrowserModule,
     FormsModule,
-    DbSelectionModule,
-    AppRoutingModule,
-    CoreModule.forRoot({ apiRootUrl: apiRootUrl, shinyConfigurationId: 0 }),
     Material2Module,
-
+    DbSelectionModule,
+    CoreModule.forRoot({ apiRootUrl: apiRootUrl, shinyConfigurationId: 0 }),
+    AppRoutingModule,
 
     // LegacyShinyModule
   ],
