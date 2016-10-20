@@ -6,7 +6,7 @@ export class AppConfigService {
   }
 
   get legacyShinyUrl(): string {
-    return appConst.legacyShinyurl;
+    return appConst.legacyShinyUrl;
   }
 
 

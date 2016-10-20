@@ -8,6 +8,7 @@ import { DbSelectionComponent } from './db-selection.component';
 import { DbSelectionRoutingModule } from './db-selection-routing.module';
 import { DbSelectionHomeComponent } from './component/db-selection-home/db-selection-home.component';
 import { DbSelectionLeftSidenavComponent } from './component/db-selection-left-sidenav/db-selection-left-sidenav.component';
+import { DbSelectionViewListComponent } from './component/db-selection-view-list/db-selection-view-list.component';
 
 @NgModule({
   imports: [
@@ -17,6 +18,6 @@ import { DbSelectionLeftSidenavComponent } from './component/db-selection-left-s
     Material2Module,
 
   ],
-  declarations: [DbSelectionComponent, DbSelectionHomeComponent, DbSelectionLeftSidenavComponent]
+  declarations: [DbSelectionComponent, DbSelectionHomeComponent, DbSelectionLeftSidenavComponent, DbSelectionViewListComponent]
 })
 export class DbSelectionModule { }

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { DbSelectionComponent } from './db-selection.component';
 import { DbSelectionHomeComponent } from './component/db-selection-home/db-selection-home.component';
+import { DbSelectionViewListComponent } from './component/db-selection-view-list/db-selection-view-list.component';
 
 const routes: Routes = [
     // { path: 'dbSelection', , pathMatch: 'full' },
@@ -11,8 +12,14 @@ const routes: Routes = [
         children: [
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: DbSelectionHomeComponent },
+            {
+                path: 'view', component: DbSelectionViewListComponent,
+                children: [
+                    { path: 'list', component: DbSelectionViewListComponent }
+                ]
+            }
         ],
-    }
+    },
 
     // { path: 'dbSelection/home', component: HomeComponent }
 ];
