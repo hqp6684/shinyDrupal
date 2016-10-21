@@ -18,7 +18,7 @@ export class IframeComService {
   }
 
   postMessageToChild(receiver: HTMLIFrameElement, message: Message) {
-    let childWindow = j
+    let targetOrigin = this.appConfService.targetChildOrigin;
     receiver.contentWindow.postMessage(JSON.stringify(message), targetOrigin);
   }
 
@@ -42,5 +42,10 @@ export class IframeComService {
       }
 
     }
+  }
+
+
+  waitForMessage() {
+
   }
 }
