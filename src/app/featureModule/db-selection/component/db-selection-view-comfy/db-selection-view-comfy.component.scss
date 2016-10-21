@@ -1,0 +1,16 @@
+.view-comfy-container{
+    display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    flex-flow: row wrap; //short-cut for the two above
+    justify-content: space-around;
+    
+    align-items: baseline;
+    align-content: space-between;
+    
+    md-card{
+        max-width: 300px;
+        order: 1;
+        margin-bottom: 5px;
+    }
+}

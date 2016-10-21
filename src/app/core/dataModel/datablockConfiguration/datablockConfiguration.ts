@@ -17,6 +17,7 @@ export class DbConfiguration {
     // }
     constructor(private db_id: number, private db_name: string, state?: DbConfigurationState) {
         if (state) {
+            // Question  ? just 1 or the whole ?
             this.state = state;
         } else {
             this.state = <DbConfigurationState>{ Untouched: false, Pristine: true, Submitted: false, Dirty: false };

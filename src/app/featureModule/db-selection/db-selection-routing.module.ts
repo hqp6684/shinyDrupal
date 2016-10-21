@@ -5,6 +5,7 @@ import { DbSelectionComponent } from './db-selection.component';
 import { DbSelectionHomeComponent } from './component/db-selection-home/db-selection-home.component';
 import { DbSelectionViewComponent } from './component/db-selection-view/db-selection-view.component';
 import { DbSelectionViewListComponent } from './component/db-selection-view-list/db-selection-view-list.component';
+import { DbSelectionViewComfyComponent } from './component/db-selection-view-comfy/db-selection-view-comfy.component';
 
 const routes: Routes = [
     // { path: 'dbSelection', , pathMatch: 'full' },
@@ -16,8 +17,9 @@ const routes: Routes = [
             {
                 path: 'view', component: DbSelectionViewComponent,
                 children: [
-                    { path: '', redirectTo: 'list', pathMatch: 'full' },
-                    { path: 'list', component: DbSelectionViewListComponent }
+                    { path: '', redirectTo: 'view_list', pathMatch: 'full' },
+                    { path: 'view_list', component: DbSelectionViewListComponent },
+                    { path: 'view_comfy', component: DbSelectionViewComfyComponent }
                 ]
             },
 

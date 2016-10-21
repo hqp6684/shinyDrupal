@@ -1,8 +1,8 @@
 
-// import { DbConfiguration } from '../datablockConfiguration/datablockConfiguration';
+import { DbConfiguration } from '../datablockConfiguration/datablockConfiguration';
 
 export class ShinyConfiguration {
-    // private dbConfigs = Array<DbConfiguration>();
+    private dbConfigs = Array<DbConfiguration>();
 
     // config of the db being edited
     // private activeDbConfig: DbConfiguration;

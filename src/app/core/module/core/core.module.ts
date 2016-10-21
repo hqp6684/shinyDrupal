@@ -29,11 +29,10 @@ import * as coreService from '../../service/service';
   ]
 })
 export class CoreModule {
-  static forRoot(config: coreService.ShinyConfigurationServiceConfig): ModuleWithProviders {
+  static forRoot() {
     return {
       ngModule: CoreModule,
       providers: [
-        { provide: coreService.ShinyConfigurationServiceConfig, useValue: config }
       ]
     };
   }

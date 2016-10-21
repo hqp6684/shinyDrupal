@@ -1,3 +1,13 @@
+<md-toolbar>
+	<h3>Datablock Selection</h3>
+	<span class="default-toolbar-filler"></span>
+	<md-button-toggle-group name="viewModes" [(ngModel)]="dbListViewMode">
+		<md-button-toggle *ngFor="let viewMode of dbListViewModes" [value]="viewMode" (change)="toggleViewMode()">
+			<md-icon>{{viewMode}}</md-icon>
+		</md-button-toggle>
+	</md-button-toggle-group>
+	<button md-icon-button (click)="end.toggle()"><md-icon class="md-24">more_horiz</md-icon></button>
+</md-toolbar>
 <md-sidenav-layout fullscreen>
 	<md-sidenav #end align="end" (open)="mybutton.focus()">
 		<button md-button #mybutton (click)="end.close()">
@@ -6,16 +16,7 @@
 		<app-db-selection-view-left-sidenav></app-db-selection-view-left-sidenav>
 	</md-sidenav>
 
-	<md-toolbar>
-		<h3>Datablock Selection</h3>
-		<span class="default-toolbar-filler"></span>
-		<md-button-toggle-group name="viewModes" [(ngModel)]="dbListViewMode">
-			<md-button-toggle *ngFor="let viewMode of dbListViewModes" [value]="viewMode" (change)="toggleViewMode()">
-				<md-icon>{{viewMode}}</md-icon>
-			</md-button-toggle>
-		</md-button-toggle-group>
-		<button md-icon-button (click)="end.toggle()"><md-icon class="md-24">more_horiz</md-icon></button>
-	</md-toolbar>
+
 
 	<router-outlet></router-outlet>
 </md-sidenav-layout>

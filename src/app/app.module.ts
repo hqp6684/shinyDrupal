@@ -16,10 +16,6 @@ import { HomeComponent } from './core/component/home/home.component';
 import { LeftSidenavComponent } from './core/component/left-sidenav/left-sidenav.component';
 import { PageNotFoundComponent } from './core/component/page-not-found/page-not-found.component';
 
-/**App config 
- * define api root url
-*/
-import { apiRootUrl } from './app.config';
 import { BottomRightMenuComponent } from './core/component/bottom-right-menu/bottom-right-menu.component';
 import { FixedTopToolbarComponent } from './core/component/fixed-top-toolbar/fixed-top-toolbar.component';
 
@@ -37,10 +33,9 @@ import { FixedTopToolbarComponent } from './core/component/fixed-top-toolbar/fix
     FormsModule,
     Material2Module,
     DbSelectionModule,
-    CoreModule.forRoot({ apiRootUrl: apiRootUrl }),
+    CoreModule.forRoot(),
     AppRoutingModule,
 
-    // LegacyShinyModule
   ],
   providers: [],
   bootstrap: [AppComponent]

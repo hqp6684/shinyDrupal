@@ -9,6 +9,13 @@ export class AppConfigService {
     return appConst.legacyShinyUrl;
   }
 
+  get apiRootUrl(): string {
+    return appConst.apiRootUrl;
+  }
 
+  get allowedOrigins(): string[] { return; }
 
+  get targetChildOrigin(): string { return appConst.targetChildOrigin; }
+
+  get targetParentOrigin(): string { return appConst.targetParentOrigin; }
 }
