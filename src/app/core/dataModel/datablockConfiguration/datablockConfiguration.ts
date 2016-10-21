@@ -26,6 +26,8 @@ export class DbConfiguration {
 
     }
     setDirty() {
+        this.state.Pristine = false;
+        this.state.Submitted = false;
         this.state.Dirty = false;
         this.state.Untouched = false;
     }
@@ -33,17 +35,20 @@ export class DbConfiguration {
         this.state.Pristine = true;
         this.state.Dirty = false;
         this.state.Untouched = false;
+        this.state.Submitted = true;
     }
     setPristine() {
         this.state.Pristine = true;
         this.state.Dirty = false;
         this.state.Submitted = false;
-        // todo restore to the last pristine
+        this.state.Untouched = false;
+        // todo restore to the last pristine state
     }
     setUntouched() {
         this.state.Untouched = true;
         this.state.Pristine = true;
         this.state.Submitted = false;
         this.state.Submitted = false;
+        // TODO set it back to original state
     }
 }
