@@ -1,5 +1,5 @@
 import {
-  ModuleWithProviders, NgModule,
+  NgModule,
   Optional, SkipSelf
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -24,8 +24,8 @@ import * as coreService from '../../service/service';
     coreService.ShinyConfigurationService,
     coreService.DatablockService,
     coreService.HandleHttpErrorService,
-    coreService.AppConfigService
-
+    coreService.AppConfigService,
+    coreService.IframeComService
   ]
 })
 export class CoreModule {

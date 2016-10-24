@@ -1,6 +1,18 @@
 export interface Message {
-    shinyConfiguration?: {
-        method: 'GET' | 'PUT' | 'SEND';
-        body?: { id: number };
+
+    connectionStatus?: {
+        fromParentToChild?: {
+            isConnected: boolean;
+        };
+        fromChildToParent?: {
+            isConnected: boolean;
+        };
     };
+    data?: {
+        shinyConfiguration?: {
+            id: number;
+        };
+        node?: any
+    };
+
 }

@@ -18,4 +18,11 @@ export class AppConfigService {
   get targetChildOrigin(): string { return appConst.targetChildOrigin; }
 
   get targetParentOrigin(): string { return appConst.targetParentOrigin; }
+
+
+  get drupalAuthenticationPage(): string { return appConst.drupalAuthenticationPage; }
+
+
+
+
 }

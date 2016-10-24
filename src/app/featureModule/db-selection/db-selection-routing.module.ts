@@ -7,15 +7,18 @@ import { DbSelectionViewComponent } from './component/db-selection-view/db-selec
 import { DbSelectionViewListComponent } from './component/db-selection-view-list/db-selection-view-list.component';
 import { DbSelectionViewComfyComponent } from './component/db-selection-view-comfy/db-selection-view-comfy.component';
 
+import { AuthGuardService } from '../../core/module/authentication/service/auth-guard.service';
 const routes: Routes = [
     // { path: 'dbSelection', , pathMatch: 'full' },
     {
         path: 'dbSelection', component: DbSelectionComponent,
+
         children: [
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: DbSelectionHomeComponent },
             {
                 path: 'view', component: DbSelectionViewComponent,
+                canActivate: [AuthGuardService],
                 children: [
                     { path: '', redirectTo: 'view_list', pathMatch: 'full' },
                     { path: 'view_list', component: DbSelectionViewListComponent },

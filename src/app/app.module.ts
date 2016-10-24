@@ -18,6 +18,7 @@ import { PageNotFoundComponent } from './core/component/page-not-found/page-not-
 
 import { BottomRightMenuComponent } from './core/component/bottom-right-menu/bottom-right-menu.component';
 import { FixedTopToolbarComponent } from './core/component/fixed-top-toolbar/fixed-top-toolbar.component';
+import { AccountMenuComponent } from './core/component/fixed-top-toolbar/account-menu/account-menu.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { FixedTopToolbarComponent } from './core/component/fixed-top-toolbar/fix
     PageNotFoundComponent,
     BottomRightMenuComponent,
     FixedTopToolbarComponent,
+    AccountMenuComponent,
   ],
   imports: [
     BrowserModule,

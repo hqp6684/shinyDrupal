@@ -1,6 +1,6 @@
 <md-toolbar>
 	<h3>Datablock Selection</h3>
-	<span class="default-toolbar-filler"></span>
+	<span class="default-md-toolbar-filler"></span>
 	<md-button-toggle-group name="viewModes" [(ngModel)]="dbListViewMode">
 		<md-button-toggle *ngFor="let viewMode of dbListViewModes" [value]="viewMode" (change)="toggleViewMode()">
 			<md-icon>{{viewMode}}</md-icon>

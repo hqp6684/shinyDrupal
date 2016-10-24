@@ -11,7 +11,6 @@ export class LegacyShinyHomeComponent implements OnInit {
 
   constructor(private appConfigService: AppConfigService, private sanitizer: DomSanitizer) {
     this.homeUrl = sanitizer.bypassSecurityTrustResourceUrl(appConfigService.legacyShinyUrl);
-    // this.homeUrl = appConfigService.legacyShinyUrl;
   }
 
   ngOnInit() {

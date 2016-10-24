@@ -1,0 +1,12 @@
+<!-- menu opens when trigger button is clicked -->
+<button md-icon-button [md-menu-trigger-for]="accountMenu">
+   <md-icon>account_circle</md-icon>
+</button>
+
+<md-menu #accountMenu="mdMenu" x-position="before" y-position="below">
+
+	<button md-menu-item routerLink="/login" routerLinkActive="active" *ngIf="authService.isLoggedIn">Sign Out</button>
+	<button md-menu-item routerLink="/login" routerLinkActive="active" *ngIf="!authService.isLoggedIn">Sign In</button>
+	<button md-menu-item routerLink="/register" routerLinkActive="active" *ngIf="!authService.isLoggedIn"> Register</button>
+	<button md-menu-item><md-icon>close</md-icon></button>
+</md-menu>

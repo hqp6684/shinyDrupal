@@ -1,11 +1,10 @@
 <md-sidenav-layout [class.dark-theme]="_isDarkTheme" fullscreen>
-
 	<md-toolbar color="primary">
 		<button md-icon-button (click)="leftSideNav.toggle()">
 			<md-icon class="md-24">menu</md-icon>
 		</button> {{title}}
-		<span class="md-toolbar-filler"></span>
+		<span class="default-md-toolbar-filler"></span>
 		<button md-button (click)="toggleDarkTheme()">TOGGLE DARK THEME</button>
+		<app-account-menu></app-account-menu>
 	</md-toolbar>
-
 </md-sidenav-layout>
