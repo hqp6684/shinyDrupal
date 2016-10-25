@@ -6,6 +6,7 @@
 		</a>
 		<a md-list-item routerLink="/dbSelection" routerLinkActive="active">Datablock</a>
 		<!--<a md-list-item routerLink="/dbColSelection" routerLinkActive="active" disabled>Column</a>-->
+		<a href="" md-list-item="" routerLink="/dbConfig" routerLinkActive="active" *ngIf="authService.isLoggedIn">My Config.</a>
 	</md-nav-list>
 	<md-divider></md-divider>
 	<h3 md-subheader>Legacy Shiny</h3>

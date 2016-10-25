@@ -15,9 +15,26 @@
 // App main layout
 md-sidenav-layout{
 
-    
+
+md-toolbar md-input{
+    label.md-input-placeholder.md-float.md-focused{
+        transform: translateY(-80%) scale(.75);
+    }
+    label.md-input-placeholder.md-float:not(.md-empty){
+        transform: translateY(-80%) scale(.75);
+    }
+    md-hint{
+        bottom: -0.4em;
+    }
+    margin-right: 10px;
+}
+
     &.dark-theme{
         background-color: #303030;
+        
+        .md-button-toggle-checked .md-button-toggle-label-content{
+            background: #E91E63
+        }
     }
 }
 

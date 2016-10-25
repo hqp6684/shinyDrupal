@@ -1,8 +1,12 @@
 import { Injectable } from '@angular/core';
 
+import { AppConfigService, ShinyConfigurationService } from '../../../core/service/service';
+
 @Injectable()
 export class DbSelectionService {
 
-  constructor() { }
+  constructor(private appConfigService: AppConfigService,
+    private shinyConfigService: ShinyConfigurationService
+  ) { }
 
 }

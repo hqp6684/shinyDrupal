@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DbSelectionModule } from './featureModule/db-selection/db-selection.module';
 // import { LegacyShinyModule } from './featureModule/legacy-shiny/legacy-shiny.module';
 // import { AdminModule } from './core/module/admin/admin.module';
+import { MyDbConfigModule } from './featureModule/my-db-config/my-db-config.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './core/component/home/home.component';
@@ -36,6 +37,7 @@ import { AccountMenuComponent } from './core/component/fixed-top-toolbar/account
     Material2Module,
     DbSelectionModule,
     CoreModule.forRoot(),
+    MyDbConfigModule,
     AppRoutingModule,
 
   ],
